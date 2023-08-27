@@ -1,0 +1,38 @@
+PS C:\Users\松島健太> cd C:\ドキュメント\デスクトップ
+PS C:\ドキュメント\デスクトップ> mkdir git_challenge
+
+
+    ディレクトリ: C:\ドキュメント\デスクトップ
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/08/27     18:07                git_challenge
+
+
+PS C:\ドキュメント\デスクトップ> cd git_challenge
+PS C:\ドキュメント\デスクトップ\git_challenge> git init
+Initialized empty Git repository in C:/ドキュメント/デスクトップ/git_challenge/.git/    
+PS C:\ドキュメント\デスクトップ\git_challenge> git add Hello,world.txt
+PS C:\ドキュメント\デスクトップ\git_challenge> git commit -m "hello_world.txtを追加"    
+[main (root-commit) c0c8cf2] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hello,world.txt
+PS C:\ドキュメント\デスクトップ\git_challenge> git commit -m "日本語訳を追加"
+On branch main
+nothing to commit, working tree clean
+PS C:\ドキュメント\デスクトップ\git_challenge> git log
+commit a77bab0c75350c3cc53a5a5f73d2d78fee89ce24 (HEAD -> main)
+Author: Kenta Matsushima <kentamatsu5@gmail.com>
+Date:   Sun Aug 27 18:15:01 2023 +0900
+
+    日本訳を追加
+
+commit c0c8cf2cda1a4f754dcec15306b606916faea6b7
+Author: Kenta Matsushima <kentamatsu5@gmail.com>
+Date:   Sun Aug 27 18:13:51 2023 +0900
+
+    hello_world.txtを追加
+PS C:\ドキュメント\デスクトップ\git_challenge> git log --oneline
+a77bab0 (HEAD -> main) 日本訳を追加
+c0c8cf2 hello_world.txtを追加
